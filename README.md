@@ -23,6 +23,8 @@ On background service hardcoded values just added to simplify solution and time 
 implement logic inside background service we can use template method or builder pattern to make it more elegant and add additional checks test coverage .  
 
 
+Also it possible to make our entities as "struct" and use ValueTask approach as a future improvments based on hardware.
+
 For simplify development , to run it locally just run web api project and run in terminal : 
 docker run --rm -p 6379:6379 redis:alpine
 
