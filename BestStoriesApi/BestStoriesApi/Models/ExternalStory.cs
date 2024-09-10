@@ -1,4 +1,4 @@
-﻿namespace BestStoriesApi
+﻿namespace BestStoriesApi.Models
 {
     public class ExternalStory
     {

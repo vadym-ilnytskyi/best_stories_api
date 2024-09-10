@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using BestStoriesApi.Models;
 using Microsoft.Extensions.Caching.Distributed;
 
 namespace BestStoriesApi.BackgroundServices;

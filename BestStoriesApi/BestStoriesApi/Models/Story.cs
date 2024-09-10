@@ -1,4 +1,4 @@
-using BestStoriesApi;
+using BestStoriesApi.Models;
 
 public class Story
 {
