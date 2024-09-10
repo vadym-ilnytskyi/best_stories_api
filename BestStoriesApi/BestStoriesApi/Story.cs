@@ -2,6 +2,7 @@ using BestStoriesApi;
 
 public class Story
 {
+    public int Id { get; set; }
     public string Title { get; set; }
     public string Uri { get; set; }
     public string PostedBy { get; set; }
@@ -9,8 +10,10 @@ public class Story
     public int Score { get; set; }
     public int CommentCount { get; set; }
 
+    public Story() { }
     public Story(ExternalStory externalStory)
     {
+
         Title = externalStory.Title;
         Uri = externalStory.Url;
         PostedBy = externalStory.By;

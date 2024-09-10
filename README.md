@@ -17,6 +17,12 @@ In this case our APi would be more less gateway  with single responsibility just
 Performance and memory allocations for our service would be minimal. And if we want to scale out web api we need to move our background service into own app. 
 Also if we use use Redis Sentinel cluster with one primary and multiple readonly nodes for scaling performance if it would be needed in future . 
 
+On controller lvl can be also validation and logic if the are only top 200 and someone ask about top 500 we return top 200 , also case when endpoint was called before background service was started case , for future improvements.
+
+On background service hardcoded values just added to simplify solution and time economy. Same situation for unit tests i've add it only to show that it's possible to add integrations tests, and unit tests. Also for 
+implement logic inside background service we can use template method or builder pattern to make it more elegant and add additional checks test coverage .  
+
+
 For simplify development , to run it locally just run web api project and run in terminal : 
 docker run --rm -p 6379:6379 redis:alpine
 
